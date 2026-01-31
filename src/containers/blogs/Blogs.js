@@ -56,8 +56,9 @@ export default function Blogs() {
             className={
               isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
             }
+            dangerouslySetInnerHTML={{ __html: blogSection.subtitle }}
           >
-            {blogSection.subtitle}
+            {/* {blogSection.subtitle} */}
           </p>
         </div>
         <div className="blog-main-div">

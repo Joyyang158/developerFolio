@@ -33,13 +33,14 @@ export default function Greeting() {
                     ? "dark-mode greeting-text-p"
                     : "greeting-text-p subTitle"
                 }
+                dangerouslySetInnerHTML={{ __html: greeting.subTitle }}
               >
-                {greeting.subTitle}
+                {/* {greeting.subTitle} */}
               </p>
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                {/* <Button text="Contact me" href="#contact" /> */}
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}
@@ -53,13 +54,23 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
+            {greeting.profilePicture ? (
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
+                alt={greeting.username}
+                src={greeting.profilePicture}
+                className="profile-pic"
+              />
+            ) : (
+              <>
+                {illustration.animated ? (
+                  <DisplayLottie animationData={landingPerson} />
+                ) : (
+                  <img
+                    alt="illustration"
+                    src={require("../../assets/images/manOnTable.svg")}
+                  ></img>
+                )}
+              </>
             )}
           </div>
         </div>

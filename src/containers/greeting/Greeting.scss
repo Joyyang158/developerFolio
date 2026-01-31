@@ -125,3 +125,39 @@
     width: auto;
   }
 }
+
+
+.profile-pic {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+
+  border-radius: 2px;
+  
+
+  border: 10px solid #E8E8E8;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  
+
+  margin-top: 200px;
+  margin-left: 350px;
+  position: relative;
+  box-sizing: border-box; 
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  50% {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 15px rgba(0,0,0,0.05);
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+}

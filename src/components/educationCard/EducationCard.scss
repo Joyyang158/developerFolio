@@ -132,3 +132,13 @@
     margin: auto;
   }
 }
+
+
+.subTitle a {
+  transition: all 0.3s ease; 
+  
+  &:hover {
+    text-decoration: underline !important; 
+    color: #7d44b1 !important;
+  }
+}

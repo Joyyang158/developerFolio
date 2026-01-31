@@ -20,26 +20,49 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Haoyan Yang",
+  title: "Hi all, I'm Haoyan",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    `I am a <span style="color: #55198b; font-weight: 500;">First-Year CS PhD student at Stony Brook University</span>, advised by
+    <a href="https://joezhouai.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="color: #55198b; text-decoration: none; font-weight: 500">
+      Prof. Jiawei Zhou
+    </a>
+    and
+    <a href="https://www3.cs.stonybrook.edu/~niranjan/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="color: #55198b; text-decoration: none; font-weight: 500">
+      Prof. Niranjan Balasubramanian
+    </a>.<br /><br />
+
+    My research interests primarily lie in the field of <span style="color: #55198b; font-weight: 500;">Large Language Models (LLMs)</span>, specifically focusing on the following four aspects:<br />
+    <span style="color: #55198b; font-weight: 500;">Self-improvement</span>: Developing mechanisms for LLMs to autonomously refine their reasoning via iterative feedback.<br />
+    <span style="color: #55198b; font-weight: 500;">Reliability</span>: Ensuring model outputs remain robust and truthful in complex, real-world settings.<br />
+    <span style="color: #55198b; font-weight: 500;">Alignment</span>: Tuning models to faithfully follow user intent through preference learning and post-training..<br />
+    <span style="color: #55198b; font-weight: 500;">RAG</span>: Enhancing generation capabilities by grounding models with external, trustworthy knowledge.<br /><br />
+
+    I warmly welcome connections and collaborations on related research topics. Feel free to reach out!`,
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+  displayGreeting: true, // Set false to hide this section, defaults to true
+  profilePicture: require("./assets/images/profile2.jpg"),
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  gmail: "haoyan.yang@stonybrook.edu",
+  linkedin: "https://www.linkedin.com/in/haoyan-yang/",
+  github: "https://github.com/Joyyang158",
+  // googlescholar: "saadpasta70@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -117,7 +140,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -126,31 +149,42 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Stony Brook University",
+      logo: require("./assets/images/sbuLogo.png"),
+      subHeader: "PhD, Computer Science",
+      duration: "September 2025 - Present",
+      desc: "GPA: 4.0 / 4.0",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+      schoolName: "New York University",
+      logo: require("./assets/images/NYULogo.png"),
+      subHeader: "MS, Data Science",
+      duration: "September 2023 - May 2025",
+      desc: "GPA: 3.92 / 4.0",
+      descBullets: ["<a href='https://cds.nyu.edu/masters-in-data-science-capstone/' target='_blank' style='color: #6c757d; text-decoration: none;'>Best Capstone Poster</a> "]
+    },
+    {
+      schoolName: "Beijing Normal-Hong Kong Baptist University",
+      logo: require("./assets/images/bnbuLogo.png"),
+      subHeader: "BS, Data Science (Conferred with the Bachelor of Science degree from Hong Kong Baptist University)",
+      duration: "September 2019 - June 2023",
+      desc: "GPA: 3.84 / 4.0 (Ranked 1st out of 94)",
+      descBullets: [
+        "<a href='https://ar.hkbu.edu.cn/graduate_services/HKBU_Commencement/scholastic_awards.htm' target='_blank' style='color: #6c757d; text-decoration: none;'>Scholastic Award</a>",
+        "<a href='https://sao.uic.edu.cn/en/info/1123/14392.htm' target='_blank' style='color: #6c757d; text-decoration: none;'>Academic Scholarships</a> for all four years(First-Class x3, Second-Class x1).",
+      ]
+    },
   ]
 };
 
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -174,29 +208,54 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Research Intern",
+      company: "GE HealthCare",
+      companylogo: require("./assets/images/ge.jpg"),
+      date: "January 2025 – May 2025",
+      desc: "Remote, WA; Advisor: Dr. Runxue Bao",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Reliability of LLM: Developed a Reasoning-based Bias Detector (RBD) to debias LLM-as-a-judge evaluations.",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Research Capstone Project Collaborator",
+      company: "S&P Global Rating",
+      companylogo: require("./assets/images/sp.jpg"),
+      date: "September 2024 – May 2025",
+      desc: "New York, NY ; Advisor: Mr. Urjit Patel",
+      descBullets: [
+        "LLM for Finance:: Developed Fin-RAG, a RAG-enhanced LLM system with dynamic chunking and hybrid retrieval for financial QA.",
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Research Intern",
+      company: "Samsung Research America",
+      companylogo: require("./assets/images/sra.png"),
+      date: "May 2024 – Augest 2024",
+      desc: "Mountain View, CA ; Advisors: Dr. Ting Hua & Dr. Shangqian Gao",
+      descBullets: [
+        "Self-Improvement of LLM: Proposed Dynamic Noise Preference Optimization (DNPO) leveraging synthetic data to enable LLM self-improvement.",
+      ]
+    },
+    {
+      role: "Research Assistant",
+      company: "NYU Langone Health",
+      companylogo: require("./assets/images/langone.png"),
+      date: "March 2024 - Augest 2025",
+      desc: "Remote, NY ; Advisor: Dr. Yiqiu Shen",
+      descBullets: [
+        "Self-LLM for Healthcare: of LLM: Built an automated multi-modal pipeline for breast ultrasound report generation.",
+      ]
+    },
+    {
+      role: "Research Intern",
+      company: "Ping An Technology",
+      companylogo: require("./assets/images/pingan.png"),
+      date: "March 2023 - June 2023",
+      desc: "Shenzhen, China ; Advisor: Mr. Zhitao Li",
+      descBullets: [
+        "RAG in LLM: Developed PRCA, a pluggable adapter that improves retrieval-augmented QA with black-box LLMs.",
+      ]
     }
   ]
 };
@@ -206,7 +265,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -239,7 +298,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -300,28 +359,70 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Publications",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    `Check out my latest research on <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=q8sCVVcAAAAJ&sortby=pubdate" target="_blank" rel="noopener noreferrer" style="color: #7d44b1; font-weight: bold; text-decoration: none;">Google Scholar</a>`,
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://arxiv.org/pdf/2505.17100",
+      title: "Any Large Language Model Can Be a Reliable Judge: Debiasing with a Reasoning-based Bias Detector",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "NeurIPS 2025"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://arxiv.org/pdf/2502.05400",
+      title: "Dynamic Noise Preference Optimization for LLM Self-Improvement via Synthetic Data",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "ArXiv 2025"
+    },
+    {
+      url: "https://arxiv.org/pdf/2411.16002?",
+      title: "Exploring Performance Contrasts in TableQA: Step-by-Step Reasoning Boosts Bigger Language Models, Limits Smaller Language Models",
+      description:
+        "ArXiv 2024"
+    },
+    {
+      url: "https://dl.acm.org/doi/pdf/10.1145/3688868.3689200",
+      title: "Burextract-llama: An llm for clinical concept extraction in breast ultrasound reports",
+      description:
+        "MM 2024 - Workshop on Multimedia Computing for Health and Medicine (Oral Paper)"
+    },
+    {
+      url: "https://arxiv.org/pdf/2406.12238?",
+      title: "PFID: Privacy First Inference Delegation Framework for LLMs",
+      description:
+        "ArXiv 2024"
+    },
+    {
+      url: "https://arxiv.org/pdf/2405.16856",
+      title: "Can We Trust LLMs? Mitigate Overconfidence Bias in LLMs through Knowledge Transfer",
+      description:
+        "ArXiv 2024"
+    },
+    {
+      url: "https://arxiv.org/pdf/2310.18347",
+      title: "PRCA: Fitting Black-Box Large Language Models for Retrieval Question Answering via Pluggable Reward-Driven Contextual Adapter",
+      description:
+        "EMNLP 2023"
+    },
+    {
+      url: "https://link.springer.com/chapter/10.1007/978-981-97-2390-4_31",
+      title: "Multimodal Stock Price Forecasting Using Attention Mechanism Based on Multi-Task Learning",
+      description:
+        "APWeb-WAIM 2023"
+    },
+    {
+      url: "https://ieeexplore.ieee.org/abstract/document/10154746",
+      title: "Swarm Intelligence Optimization of UAV Routing with Simultaneously Stochastic Pick-up and Delivery during COVID-19",
+      description:
+        "ICCCBDA 2023"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -343,7 +444,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +457,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -369,18 +470,18 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "haoyan.yang@stonybrook.edu, haoyanyang5@gmail.com",
+  display: false
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
