@@ -128,23 +128,37 @@
 
 
 .profile-pic {
-  width: 600px;
-  height: 400px;
+  /* 1. 使用 max-width 保证在大屏上不会无限变大，在小屏上自动缩小 */
+  width: 70%;           /* 在容器内占据 80% 的宽度 */
+  max-width: 600px;     /* 最大不超过 600px */
+  
+  /* 2. 核心：使用 aspect-ratio 维持 3:2 的矩形比例，不再需要写死 height */
+  aspect-ratio: 3 / 2;  
+  height: auto;         /* 高度根据宽度自动计算 */
+  
   object-fit: cover;
+  border-radius: 4px;   /* 相对大小下，圆角也可以稍微大一点点 */
+  border: 1.5vw solid #E8E8E8; /* 边框厚度随屏幕宽度变化，或者保留 10px */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 
-  border-radius: 2px;
+  /* 3. 放弃硬编码的 margin-left，改用自动居中或百分比 */
+  margin: 200px auto;   /* 上下留 100px，左右自动居中 */
+  display: block;       /* 确保 margin: auto 生效 */
   
-
-  border: 10px solid #E8E8E8;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  
-
-  margin-top: 200px;
-  margin-left: 350px;
   position: relative;
   box-sizing: border-box; 
+  
+  /* 动画保持不变，它在相对大小下依然工作完美 */
   animation: floating 3s ease-in-out infinite;
+}
+
+/* 针对手机端的微调 */
+@media (max-width: 768px) {
+  .profile-pic {
+    width: 90%;         /* 手机端占满一点 */
+    margin-top: 50px;   /* 缩小顶部间距 */
+    border: 8px solid #E8E8E8; /* 手机端边框减薄 */
+  }
 }
 
 @keyframes floating {

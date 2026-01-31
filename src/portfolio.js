@@ -47,7 +47,7 @@ const greeting = {
     I warmly welcome connections and collaborations on related research topics. Feel free to reach out!`,
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1z9m9cWw30auCfju0Coq5hppg8AAso2We/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true, // Set false to hide this section, defaults to true
   profilePicture: require("./assets/images/profile2.jpg"),
 };
