@@ -174,7 +174,7 @@ const educationInfo = {
       duration: "September 2019 - June 2023",
       desc: "GPA: 3.84 / 4.0 (Ranked 1st out of 94)",
       descBullets: [
-        "<a href='https://ar.hkbu.edu.cn/graduate_services/HKBU_Commencement/scholastic_awards.htm' target='_blank' style='color: #6c757d; text-decoration: none;'>Scholastic Award</a>",
+        "<a href='https://ar.hkbu.edu.hk/student-services/graduation/scholastic-awards' target='_blank' style='color: #6c757d; text-decoration: none;'>Scholastic Award</a>",
         "<a href='https://sao.uic.edu.cn/en/info/1123/14392.htm' target='_blank' style='color: #6c757d; text-decoration: none;'>Academic Scholarships</a> for all four years(First-Class x3, Second-Class x1).",
       ]
     },
